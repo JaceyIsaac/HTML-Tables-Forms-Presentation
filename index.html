@@ -1,74 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF=8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HTML Table & Forms Tutorial</title>
+<style>
+        body {
+            font-family: 'Calibri', Courier, monospace, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #dfdfdf;
+        }
+        header {
+            background-color: #f9c9c9;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #ecf0fc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        code {
+            background-color: #eee;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            white-space: pre-wrap;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+</style>
 </head>
 <body>
 
-    <h3 style="color: white; text-align: center; background-color: #0054a6; height: 50px; display: flex; align-items: center; justify-content: center;">HTML Table & Forms Tutorial</h3>
+    <h1 style="color: white; text-align: center; background-color: #0054a6; display: flex; align-items: center; justify-content: center; padding: 10px; border-radius: 8px;">
+        HTML Table & Forms Tutorial
+    </h1>
     <br>
-
-    <div>
+    <section id="table-elements" style="text-align: left; margin: 0 auto; width: 70%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 20px;">
     <ol>
-        <li><b>Table HTML Elements & Attributes</b></li>
+        <h1>1. Table HTML Elements & Attributes</h1>
+        <hr>
+        <br>
             <ul>
-                <br>
                 <li>
                     Heading element to display "Weekly Date Adventure Planner"
                 </li>
-                        <p style="background-color: rgb(201, 199, 199); width: 35px; min-height: 0;">&lt;h1&gt;</p>
+                        <p style="width: 37px; min-height: 0;"><code style="text-align:left;">&lt;h1&gt;</code></p>
                 <li>
                     The main table element.
-                </li>
-                        <p style="background-color: rgb(201, 199, 199); width: 50px;">&lt;table&gt;</p>
+                </li>   
+                        <p style="width: 60px;"><code style="text-align:center;">&lt;table&gt;</code></p>                        
                 <i><b>Attributes used:</b></i>
-                        <p style="background-color: rgb(201, 199, 199); width: 440px;">style="background-color:#b05f54;”(sets background color to pink)
+                        <p style="width: 440px;"><code>style="background-color:#b05f54;” (sets background color to pink)</code>
                         </p>
-                        <p style="background-color: rgb(201, 199, 199); width: 100px;">align="center"</p>
-                        <p style="background-color: rgb(201, 199, 199); width: 100px;"> width="700"</p>
+                        <p style="width: 100px;"><code>align="center"</code></p>
+                        <p style="width: 100px;"><code>width="700"</code></p>
                 <li>
                     Defines a row in the table.
                 </li>
-                        <p style="background-color: rgb(201, 199, 199); width: 50px;">&lt;tr&gt;</p>
+                        <p style="width: 50px;"><code>&lt;tr&gt;</code></p>
                 <li>
                     Table header cells for each day of the week.
                 </li>
-                        <p style="background-color: rgb(201, 199, 199); width: 50px;">&lt;th&gt;</p>
+                        <p style="width: 50px;"><code>&lt;th&gt;</code></p>
                     <i><b>Attributes used:</b></i>
-                        <p style="background-color: rgb(201, 199, 199); width: 300px;">width="300" (sets column width)
+                        <p style="width: 300px;">width="300" (sets column width)
                         </p>
                 <li>
                     Table data cells containing date plans.
                 </li>
-                        <p style="background-color: rgb(201, 199, 199); width: 100px;">&lt;td&gt;</p>
+                        <p style="width: 100px;"><code>&lt;td&gt;</code></p>
                         </p>
                 <i><b>Attributes used:</b></i>
-                        <p style="background-color: rgb(201, 199, 199); width: 350px;">align="center" (centers the text within the cell)
-                        </p>    
+                        <p style="width: 350px;">align="center" (centers the text within the cell)
+                        </p>   
+  
+
             </ul>
+            <br>
+            <h1 style="text-align: center; background-color: #0054a6; border-radius: 9px; color:white; height: 40px; display: flex; align-items: center; justify-content: center;"> Let's try coding a table in HTML!</h1>
+            <div style="display: flex; justify-content: center; align-items: center; resize: none; overflow: hidden;">
+                <textarea id="codeEditor" style="width: 1000px; height: 310px;">
+                    <table style="background-color: #b05f54;" align="center" width="700">
+                        <tr style="background-color: lightpink">
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                        <tr style="background-color: rgb(235, 135, 122)">
+                            <td align="center">Coffee Date</td>
+                            <td align="center">Movie Night</td>
+                            <td align="center">Park Walk</td>
+                            <td align="center">Brunch</td>
+                            <td align="center">Game Night</td>
+                            <td align="center">Road Trip</td>
+                            <td align="center">Beach Day</td>
+                        </tr>
+                    </table>
+            </textarea>
+        </div>  
             <br>
             <hr>
             <h1 style="text-align: center;">Weekly Date Adventure Planner</h1>
             <br>
-            <table style="background-color: #b05f54;" align="center" width="700">
-                <tr style="background-color: lightpink">
-                    <th>Sunday</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                </tr>
-                <tr style="background-color: rgb(235, 135, 122)">
-                    <td align="center">Coffee Date</td>
-                    <td align="center">Movie Night</td>
-                    <td align="center">Park Walk</td>
-                    <td align="center">Brunch</td>
-                    <td align="center">Game Night</td>
-                    <td align="center">Road Trip</td>
-                    <td align="center">Beach Day</td>
-                </tr>
-            </table>
+                <table style="background-color: #b05f54;" align="center" width="700">
+                    <tr style="background-color: lightpink">
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                    <tr style="background-color: rgb(235, 135, 122)">
+                        <td align="center">Coffee Date</td>
+                        <td align="center">Movie Night</td>
+                        <td align="center">Park Walk</td>
+                        <td align="center">Brunch</td>
+                        <td align="center">Game Night</td>
+                        <td align="center">Road Trip</td>
+                        <td align="center">Beach Day</td>
+                    </tr>
+                 </table>
+    </secion id="table-elements"> 
 </body>
 </html>
