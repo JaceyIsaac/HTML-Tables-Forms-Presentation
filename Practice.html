@@ -2,7 +2,8 @@
 <html>
 <head><title>Text Formatting!</title>
 </head>
-<body>
+<body style="background-color: pink;">
+    
     <!--Lists-->
     <!--<h1>Unordered List</h1>
     <ul>
@@ -71,6 +72,119 @@
         </tr>
         </div>
     </table>-->
+
+    <form action="action.page.php" method="POST">
+        <div>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Jacey Isaac" required>
+        </div>  
+
+        <br>
+
+        <div>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Mira" required>
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" name="pass" maxlength="12">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">Phone #</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="title">Title: </label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="title" value="PhD.">    
+        </div>
+
+        <br>
+
+        <div>
+            <label for="payment">Payment:</label>
+            <select id="payment" name="payment">
+                <option value="visa">Visa</option>
+                <option value="paypal">Paypal</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="checkbox">Check Box</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+        
+    </form>
+    
+    <!--
+    <h1 style="font-family:'Times New Roman', Times, serif; color: white; text-align: center;">All about rabbits!</h1>
+
+    <p style="font-family:'Times New Roman', Times, serif;">
+    <b><u>Basic info</u></b>
+    <br>
+    Rabbits are little creatures with <u><i>long ears</i></u> and <i><u>puffy tails</u></i>, 
+    and they move their nose up and down in an adorable way.
+    They eat the most orange vegetables in our world, and they reproduce more than human ever has.
+    <br>
+    <br>
+    <b><u>Song:</u></b>
+    <br>
+    <i>Little Bunny Foo Foo</i>, I don't want to see you
+    Scooping up the field mice <i>And hopping them on the head!</i></p>
+    -->
+
 
 </body>
 </html>
